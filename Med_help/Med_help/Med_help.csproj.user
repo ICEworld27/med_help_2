@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AddIll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DocInter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Naznach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PatientInter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Rasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RestoreIll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RestoreZapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Spravki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Zapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

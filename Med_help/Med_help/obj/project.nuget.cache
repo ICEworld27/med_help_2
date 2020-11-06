@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cc+/4kNp1wcDKHu/CZ888CYULytW2ZS+EkQj30suuV0UqwXdFZBljkn27FRV9PBlB78pyVszP69azJlSpHRSVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acern\\source\\repos\\Med_help\\Med_help\\Med_help.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acern\\.nuget\\packages\\messagingtoolkit.qrcode\\1.3.0\\messagingtoolkit.qrcode.1.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MessagingToolkit.QRCode 1.3.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MessagingToolkit.QRCode",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
