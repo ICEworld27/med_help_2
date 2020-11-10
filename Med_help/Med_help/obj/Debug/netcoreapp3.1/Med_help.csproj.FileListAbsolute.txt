@@ -28,3 +28,4 @@ C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.c
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.AddNaznach.resources
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.Naznachs.resources
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.AddSpravka.resources
+C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.NewPatient.resources

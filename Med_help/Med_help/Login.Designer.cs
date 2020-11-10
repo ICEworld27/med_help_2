@@ -44,11 +44,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pLogin.AutoSize = true;
-            this.pLogin.Location = new System.Drawing.Point(379, 140);
+            this.pLogin.Location = new System.Drawing.Point(374, 140);
             this.pLogin.Name = "pLogin";
-            this.pLogin.Size = new System.Drawing.Size(46, 20);
+            this.pLogin.Size = new System.Drawing.Size(52, 20);
             this.pLogin.TabIndex = 0;
-            this.pLogin.Text = "Login";
+            this.pLogin.Text = "Логин";
             // 
             // pPassword
             // 
@@ -56,11 +56,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pPassword.AutoSize = true;
-            this.pPassword.Location = new System.Drawing.Point(364, 229);
+            this.pPassword.Location = new System.Drawing.Point(369, 229);
             this.pPassword.Name = "pPassword";
-            this.pPassword.Size = new System.Drawing.Size(70, 20);
+            this.pPassword.Size = new System.Drawing.Size(62, 20);
             this.pPassword.TabIndex = 1;
-            this.pPassword.Text = "Password";
+            this.pPassword.Text = "Пароль";
             // 
             // vLogin
             // 
@@ -81,8 +81,10 @@
             this.vPassword.Location = new System.Drawing.Point(300, 252);
             this.vPassword.MinimumSize = new System.Drawing.Size(200, 30);
             this.vPassword.Name = "vPassword";
+            this.vPassword.PasswordChar = '*';
             this.vPassword.Size = new System.Drawing.Size(200, 27);
             this.vPassword.TabIndex = 3;
+            this.vPassword.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -108,13 +110,10 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label1.Location = new System.Drawing.Point(445, 68);
+            this.label1.Location = new System.Drawing.Point(454, 81);
             this.label1.MinimumSize = new System.Drawing.Size(30, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 30);
@@ -123,12 +122,9 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(325, 68);
+            this.label2.Location = new System.Drawing.Point(324, 81);
             this.label2.MinimumSize = new System.Drawing.Size(124, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 30);
@@ -139,9 +135,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 453);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.vv);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vPassword);

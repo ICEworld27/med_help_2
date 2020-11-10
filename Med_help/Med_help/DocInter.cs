@@ -33,5 +33,10 @@ namespace Med_help
             Work Login = new Work(doc);
             Login.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new NewPatient().Show();
+        }
     }
 }

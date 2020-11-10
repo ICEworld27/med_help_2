@@ -39,6 +39,7 @@
             // 
             // timezapis
             // 
+            this.timezapis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.timezapis.Location = new System.Drawing.Point(275, 113);
             this.timezapis.MinDate = new System.DateTime(2020, 11, 4, 0, 0, 0, 0);
             this.timezapis.MinimumSize = new System.Drawing.Size(250, 27);
@@ -50,9 +51,9 @@
             // zapisatsa
             // 
             this.zapisatsa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.zapisatsa.Location = new System.Drawing.Point(12, 335);
+            this.zapisatsa.Location = new System.Drawing.Point(12, 336);
             this.zapisatsa.Name = "zapisatsa";
-            this.zapisatsa.Size = new System.Drawing.Size(776, 52);
+            this.zapisatsa.Size = new System.Drawing.Size(758, 52);
             this.zapisatsa.TabIndex = 2;
             this.zapisatsa.Text = "записться";
             this.zapisatsa.UseVisualStyleBackColor = true;
@@ -85,7 +86,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(297, 175);
+            this.label2.Location = new System.Drawing.Point(297, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(191, 20);
             this.label2.TabIndex = 4;
@@ -96,10 +97,10 @@
             this.dateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTime.CustomFormat = "HH:mm";
             this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTime.Location = new System.Drawing.Point(275, 198);
+            this.dateTime.Location = new System.Drawing.Point(275, 199);
             this.dateTime.Name = "dateTime";
             this.dateTime.ShowUpDown = true;
-            this.dateTime.Size = new System.Drawing.Size(250, 27);
+            this.dateTime.Size = new System.Drawing.Size(232, 27);
             this.dateTime.TabIndex = 5;
             this.dateTime.Value = new System.DateTime(2020, 11, 4, 18, 38, 0, 0);
             // 
@@ -115,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTime);
             this.Controls.Add(this.label2);
@@ -123,8 +124,9 @@
             this.Controls.Add(this.doctorchose);
             this.Controls.Add(this.zapisatsa);
             this.Controls.Add(this.timezapis);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "Zapis";
-            this.Text = "Zapis";
+            this.Text = "Запись на прием - HospitalX";
             this.ResumeLayout(false);
             this.PerformLayout();
 

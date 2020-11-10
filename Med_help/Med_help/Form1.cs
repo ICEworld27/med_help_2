@@ -42,7 +42,7 @@ namespace Med_help
             a = new Patient("D", "D", "D", "D", bd, 554554);
             Doc c = new Doc("Vasily", "Pupkin", "VasilyP", "Vasa5761", "Lor");
             Doc b = new Doc("Sergey", "Ivanov", "SergeyI", "Sery8561", "Xiryrg");
-            b.Give_Reference(555454, a, DateTime.Now);
+            //b.Give_Reference(555454, a, DateTime.Now, "");
             a.naznach.Add("Пей таблетки!");
             a.naznach.Add("Плоти налоги!");
             //a.Add_Record(DateTime.Now, c);
