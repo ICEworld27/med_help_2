@@ -19,7 +19,7 @@ namespace Med_help
         {
             string end = "";
             end += discription + ", длилась " + period +"дней ";
-            if (question)
+            if (!question)
             {
                 end += "диагноз под вопросом";
             }

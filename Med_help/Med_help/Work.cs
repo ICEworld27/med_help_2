@@ -26,33 +26,44 @@ namespace Med_help
                 good.Add(key.Key);
             }
             label1.Text = "";
-            for (int i = 0; i < good.Count - 1; i++)
+            if(good.Count > 0)
             {
-                if (good[i].CompareTo(good[i + 1]) > 0)
+                for (int i = 0; i < good.Count - 1; i++)
                 {
-                    DateTime dateTime = new DateTime();
-                    dateTime = good[i];
-                    good[i] = good[i + 1];
-                    good[i + 1] = dateTime;
+                    if (good[i].CompareTo(good[i + 1]) > 0)
+                    {
+                        DateTime dateTime = new DateTime();
+                        dateTime = good[i];
+                        good[i] = good[i + 1];
+                        good[i + 1] = dateTime;
+                    }
+
                 }
 
+                patient = doc.q[good[0]];
+                label1.Text = "Ваш пациент\n" + doc.q[good[0]];
+                if (doc.q[good[0]].Med_Card.Ills.Count > 0)
+                {
+                    label1.Text += "\nПоследняя болезнь: " + doc.q[good[0]].Med_Card.Ills[doc.q[good[0]].Med_Card.Ills.Count - 1];
+                }
+                label1.Text += "\nВремя приёма " + good[0];
+                label1.Visible = true;
+                button1.Text = "Следующий";
+                button2.Visible = true;
+                button3.Visible = true;
+                button4.Visible = true;
+                button5.Visible = true;
+                button6.Visible = true;
+                doc.q.Remove(good[0]);
             }
-            
-            patient = doc.q[good[0]];
-            label1.Text += "\n" + doc.q[good[0]];
-            if (doc.q[good[0]].Med_Card.Ills.Count > 0)
+            else
             {
-                label1.Text += "\nПоследняя болезнь: " + doc.q[good[0]].Med_Card.Ills[doc.q[good[0]].Med_Card.Ills.Count - 1];
+                label1.Text = "Пока никто не записался на ваш приём";
+                button1.Text = "Следующий";
+                label1.Visible = true;
             }
-            label1.Text += "\nВремя приёма " + good[0];
-            label1.Visible = true;
-            button1.Text = "Следующий";
-            button2.Visible = true;
-            button3.Visible = true;
-            button4.Visible = true;
-            button5.Visible = true;
-            button6.Visible = true;
-            good.Remove(good[0]);
+
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -73,13 +84,19 @@ namespace Med_help
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            new AddSpravka(doc, patient).Show();
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
             RestoreIll zapis = new RestoreIll(patient);
             zapis.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddNaznach addNaznach = new AddNaznach(patient);
+            addNaznach.Show();
         }
     }
 }

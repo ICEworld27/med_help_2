@@ -39,8 +39,9 @@
             // 
             // timezapis
             // 
-            this.timezapis.Location = new System.Drawing.Point(289, 125);
+            this.timezapis.Location = new System.Drawing.Point(275, 113);
             this.timezapis.MinDate = new System.DateTime(2020, 11, 4, 0, 0, 0, 0);
+            this.timezapis.MinimumSize = new System.Drawing.Size(250, 27);
             this.timezapis.Name = "timezapis";
             this.timezapis.Size = new System.Drawing.Size(250, 27);
             this.timezapis.TabIndex = 1;
@@ -48,7 +49,8 @@
             // 
             // zapisatsa
             // 
-            this.zapisatsa.Location = new System.Drawing.Point(12, 375);
+            this.zapisatsa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.zapisatsa.Location = new System.Drawing.Point(12, 335);
             this.zapisatsa.Name = "zapisatsa";
             this.zapisatsa.Size = new System.Drawing.Size(776, 52);
             this.zapisatsa.TabIndex = 2;
@@ -58,7 +60,10 @@
             // 
             // doctorchose
             // 
-            this.doctorchose.Location = new System.Drawing.Point(289, 30);
+            this.doctorchose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.doctorchose.Location = new System.Drawing.Point(275, 30);
+            this.doctorchose.MinimumSize = new System.Drawing.Size(250, 0);
             this.doctorchose.Name = "doctorchose";
             this.doctorchose.Size = new System.Drawing.Size(250, 28);
             this.doctorchose.TabIndex = 3;
@@ -67,8 +72,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(312, 90);
+            this.label1.MinimumSize = new System.Drawing.Size(176, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(176, 20);
             this.label1.TabIndex = 4;
@@ -76,8 +83,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(312, 175);
+            this.label2.Location = new System.Drawing.Point(297, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(191, 20);
             this.label2.TabIndex = 4;
@@ -85,9 +93,10 @@
             // 
             // dateTime
             // 
+            this.dateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTime.CustomFormat = "HH:mm";
             this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTime.Location = new System.Drawing.Point(289, 198);
+            this.dateTime.Location = new System.Drawing.Point(275, 198);
             this.dateTime.Name = "dateTime";
             this.dateTime.ShowUpDown = true;
             this.dateTime.Size = new System.Drawing.Size(250, 27);

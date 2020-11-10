@@ -15,9 +15,9 @@ namespace Med_help
             Hospital hospital = Hospital.getInstance();
             hospital.a.Add(this);
         }
-        public void Give_Reference(int time, Patient owner, DateTime time_of_issue)
+        public void Give_Reference(int time, Patient owner, DateTime time_of_issue, string discription)
         {
-            owner.references.Add(new Reference(time, owner, time_of_issue));
+            owner.references.Add(new Reference(time, owner, time_of_issue, discription));
         }
         public void AddIll(Patient owner, Ill ill)
         {

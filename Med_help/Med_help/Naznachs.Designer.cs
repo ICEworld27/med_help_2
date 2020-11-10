@@ -1,6 +1,6 @@
 ﻿namespace Med_help
 {
-    partial class Naznach
+    partial class Naznachs
     {
         /// <summary>
         /// Required designer variable.
@@ -33,21 +33,26 @@
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
+            this.listBox1.Location = new System.Drawing.Point(10, 13);
+            this.listBox1.MinimumSize = new System.Drawing.Size(758, 424);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(775, 424);
+            this.listBox1.Size = new System.Drawing.Size(758, 424);
             this.listBox1.TabIndex = 0;
             // 
-            // Naznach
+            // Naznachs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.listBox1);
-            this.Name = "Naznach";
-            this.Text = "Naznach";
+            this.MinimumSize = new System.Drawing.Size(800, 500);
+            this.Name = "Naznachs";
+            this.Text = "Назначения - HospitalX";
             this.Load += new System.EventHandler(this.Naznach_Load);
             this.ResumeLayout(false);
 

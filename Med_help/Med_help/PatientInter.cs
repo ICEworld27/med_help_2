@@ -36,7 +36,7 @@ namespace Med_help
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Naznach Login = new Naznach(patient1);
+            Naznachs Login = new Naznachs(patient1);
             Login.Show();
         }
 

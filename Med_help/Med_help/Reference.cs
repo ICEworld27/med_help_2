@@ -6,7 +6,7 @@ namespace Med_help
 {
     public class Reference : Document
     {
-        public Reference(int number, Person owner, DateTime time_of_issue) : base(number, owner, time_of_issue)
+        public Reference(int number, Person owner, DateTime time_of_issue, string discript) : base(number, owner, time_of_issue)
         {
 
         }
