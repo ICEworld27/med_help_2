@@ -13,6 +13,7 @@ namespace Med_help
         public Login()
         {
             InitializeComponent();
+            
         }
 
         private void Login_Load(object sender, EventArgs e)

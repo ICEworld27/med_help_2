@@ -27,5 +27,10 @@ namespace Med_help
         {
 
         }
+
+        private void Spravki_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

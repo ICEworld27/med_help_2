@@ -15,6 +15,9 @@ namespace Med_help
         {
             InitializeComponent();
             this.doc = doc;
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(new Rasp(doc).listBox1.Items);
+            
         }
 
         private void DocInter_Load(object sender, EventArgs e)
@@ -37,6 +40,17 @@ namespace Med_help
         private void button3_Click(object sender, EventArgs e)
         {
             new NewPatient().Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Work_Click(object sender, EventArgs e)
+        {
+            Work Login = new Work(doc);
+            Login.ShowDialog();
         }
     }
 }

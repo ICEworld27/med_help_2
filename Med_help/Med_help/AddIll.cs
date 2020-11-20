@@ -29,5 +29,10 @@ namespace Med_help
                 richTextBox1.BackColor = Color.Crimson;
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,84 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.zapis = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ZapisM = new System.Windows.Forms.ToolStripMenuItem();
+            this.NewZapis = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditZapis = new System.Windows.Forms.ToolStripMenuItem();
+            this.Zpais = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spravki = new System.Windows.Forms.ToolStripMenuItem();
+            this.Naznaches = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // zapis
+            // menuStrip1
             // 
-            this.zapis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.zapis.Location = new System.Drawing.Point(12, 10);
-            this.zapis.MinimumSize = new System.Drawing.Size(758, 100);
-            this.zapis.Name = "zapis";
-            this.zapis.Size = new System.Drawing.Size(758, 100);
-            this.zapis.TabIndex = 0;
-            this.zapis.Text = "Записаться на приём";
-            this.zapis.UseVisualStyleBackColor = true;
-            this.zapis.Click += new System.EventHandler(this.zapis_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ZapisM,
+            this.Spravki,
+            this.Naznaches});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "Главное меню";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // button2
+            // ZapisM
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(12, 120);
-            this.button2.MinimumSize = new System.Drawing.Size(758, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(758, 100);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Изменить время приема";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ZapisM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NewZapis,
+            this.EditZapis,
+            this.Zpais});
+            this.ZapisM.Name = "ZapisM";
+            this.ZapisM.Size = new System.Drawing.Size(72, 24);
+            this.ZapisM.Text = "Запись";
             // 
-            // button3
+            // NewZapis
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(12, 340);
-            this.button3.MinimumSize = new System.Drawing.Size(758, 100);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(758, 100);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Список назначений";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.NewZapis.Name = "NewZapis";
+            this.NewZapis.Size = new System.Drawing.Size(229, 26);
+            this.NewZapis.Text = "Записаться";
+            this.NewZapis.Click += new System.EventHandler(this.NewZapis_Click_1);
             // 
-            // button1
+            // EditZapis
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(12, 230);
-            this.button1.MinimumSize = new System.Drawing.Size(758, 100);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(758, 100);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Справки";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.EditZapis.Name = "EditZapis";
+            this.EditZapis.Size = new System.Drawing.Size(229, 26);
+            this.EditZapis.Text = "Изменить запись";
+            this.EditZapis.Click += new System.EventHandler(this.EditZapis_Click);
+            // 
+            // Zpais
+            // 
+            this.Zpais.Name = "Zpais";
+            this.Zpais.Size = new System.Drawing.Size(229, 26);
+            this.Zpais.Text = "Посмотреть записи";
+            this.Zpais.Click += new System.EventHandler(this.Zpais_Click);
+            // 
+            // Spravki
+            // 
+            this.Spravki.Name = "Spravki";
+            this.Spravki.Size = new System.Drawing.Size(82, 24);
+            this.Spravki.Text = "Справки";
+            this.Spravki.Click += new System.EventHandler(this.Spravki_Click);
+            // 
+            // Naznaches
+            // 
+            this.Naznaches.Name = "Naznaches";
+            this.Naznaches.Size = new System.Drawing.Size(108, 24);
+            this.Naznaches.Text = "Назначения";
+            this.Naznaches.Click += new System.EventHandler(this.Naznaches_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(0, 28);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(782, 425);
+            this.listBox1.TabIndex = 5;
             // 
             // PatientInter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.zapis);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "PatientInter";
             this.Text = "Помошник пациента - HospitalX";
             this.Load += new System.EventHandler(this.PatientInter_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button zapis;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ZapisM;
+        private System.Windows.Forms.ToolStripMenuItem Spravki;
+        private System.Windows.Forms.ToolStripMenuItem Naznaches;
+        private System.Windows.Forms.ToolStripMenuItem NewZapis;
+        private System.Windows.Forms.ToolStripMenuItem EditZapis;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ToolStripMenuItem Zpais;
     }
 }

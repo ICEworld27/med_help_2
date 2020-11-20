@@ -15,6 +15,19 @@ namespace Med_help
         {
             InitializeComponent();
             patient1 = patient;
+            Hospital hospital = Hospital.getInstance();
+            for (int i = 0; i < hospital.a.Count; i++)
+            {
+
+                foreach (KeyValuePair<DateTime, Patient> key in hospital.a[i].q)
+                {
+
+                    if (key.Value == patient1)
+                    {
+                        listBox1.Items.Add(key.Key +" приём у: "+ hospital.a[i]);
+                    }
+                }
+            }
         }
 
         private void PatientInter_Load(object sender, EventArgs e)
@@ -44,6 +57,67 @@ namespace Med_help
         {
             Spravki Login = new Spravki(patient1);
             Login.Show();
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void NewZapis_Click(object sender, EventArgs e)
+        {
+            Spravki Login = new Spravki(patient1);
+            Login.ShowDialog();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EditZapis_Click(object sender, EventArgs e)
+        {
+            new RestoreZapis(patient1).ShowDialog();
+        }
+
+        private void NewZapis_Click_1(object sender, EventArgs e)
+        {
+            new Zapis(patient1).ShowDialog();
+        }
+
+        private void Spravki_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(new Spravki(patient1).listBox1.Items);
+        }
+
+        private void Naznaches_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(new Naznachs(patient1).listBox1.Items);
+        }
+
+        private void Zpais_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            Hospital hospital = Hospital.getInstance();
+            for (int i = 0; i < hospital.a.Count; i++)
+            {
+
+                foreach (KeyValuePair<DateTime, Patient> key in hospital.a[i].q)
+                {
+
+                    if (key.Value == patient1)
+                    {
+                        listBox1.Items.Add(key.Key + " приём у: " + hospital.a[i]);
+                    }
+                }
+            }
         }
     }
 }

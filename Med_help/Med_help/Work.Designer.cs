@@ -30,11 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Docs = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spravka = new System.Windows.Forms.ToolStripMenuItem();
+            this.Nanach = new System.Windows.Forms.ToolStripMenuItem();
+            this.Ill = new System.Windows.Forms.ToolStripMenuItem();
+            this.New = new System.Windows.Forms.ToolStripMenuItem();
+            this.Restore = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddZapis = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -43,12 +47,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(25, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ваш пациент:";
             this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
@@ -62,88 +67,87 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // menuStrip1
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(12, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(233, 73);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Добавить назначение";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Docs,
+            this.Ill,
+            this.AddZapis});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // button3
+            // Docs
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(542, 192);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 73);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Выписать справку";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Docs.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Spravka,
+            this.Nanach});
+            this.Docs.Name = "Docs";
+            this.Docs.Size = new System.Drawing.Size(101, 24);
+            this.Docs.Text = "Документы";
             // 
-            // button4
+            // Spravka
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(128, 268);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(255, 73);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Добавить болезнь";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Spravka.Name = "Spravka";
+            this.Spravka.Size = new System.Drawing.Size(224, 26);
+            this.Spravka.Text = "Новая справка";
+            this.Spravka.Click += new System.EventHandler(this.Spravka_Click);
             // 
-            // button5
+            // Nanach
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(269, 192);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(249, 73);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Записать на прием";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.Nanach.Name = "Nanach";
+            this.Nanach.Size = new System.Drawing.Size(224, 26);
+            this.Nanach.Text = "Новое назначение";
+            this.Nanach.Click += new System.EventHandler(this.Nanach_Click);
             // 
-            // button6
+            // Ill
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(407, 268);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(255, 73);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Изменить болезнь";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.Ill.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.New,
+            this.Restore});
+            this.Ill.Name = "Ill";
+            this.Ill.Size = new System.Drawing.Size(82, 24);
+            this.Ill.Text = "Болезни";
+            // 
+            // New
+            // 
+            this.New.Name = "New";
+            this.New.Size = new System.Drawing.Size(223, 26);
+            this.New.Text = "Новая болезнь";
+            this.New.Click += new System.EventHandler(this.New_Click);
+            // 
+            // Restore
+            // 
+            this.Restore.Name = "Restore";
+            this.Restore.Size = new System.Drawing.Size(223, 26);
+            this.Restore.Text = "Изменить болезнь";
+            this.Restore.Click += new System.EventHandler(this.Restore_Click);
+            // 
+            // AddZapis
+            // 
+            this.AddZapis.Name = "AddZapis";
+            this.AddZapis.Size = new System.Drawing.Size(157, 24);
+            this.AddZapis.Text = "Записать на приём";
+            this.AddZapis.Click += new System.EventHandler(this.AddZapis_Click);
             // 
             // Work
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "Work";
             this.Text = "Работа - HospitalX";
+            this.Load += new System.EventHandler(this.Work_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,10 +157,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Docs;
+        private System.Windows.Forms.ToolStripMenuItem Spravka;
+        private System.Windows.Forms.ToolStripMenuItem Nanach;
+        private System.Windows.Forms.ToolStripMenuItem Ill;
+        private System.Windows.Forms.ToolStripMenuItem AddZapis;
+        private System.Windows.Forms.ToolStripMenuItem New;
+        private System.Windows.Forms.ToolStripMenuItem Restore;
     }
 }

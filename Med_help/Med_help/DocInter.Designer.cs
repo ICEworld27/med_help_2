@@ -28,67 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Work = new System.Windows.Forms.ToolStripMenuItem();
+            this.Patient = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // menuStrip1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(13, 15);
-            this.button1.MinimumSize = new System.Drawing.Size(758, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(758, 133);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Расписание приёмов";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Work,
+            this.Patient});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // button2
+            // Work
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(13, 158);
-            this.button2.MinimumSize = new System.Drawing.Size(758, 133);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(758, 133);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Работать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Work.Name = "Work";
+            this.Work.Size = new System.Drawing.Size(85, 24);
+            this.Work.Text = "Работать";
+            this.Work.Click += new System.EventHandler(this.Work_Click);
             // 
-            // button3
+            // Patient
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(13, 301);
-            this.button3.MinimumSize = new System.Drawing.Size(758, 133);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(758, 133);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Регистация нового пациента";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Patient.Name = "Patient";
+            this.Patient.Size = new System.Drawing.Size(133, 24);
+            this.Patient.Text = "Новый пациент";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(0, 28);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(782, 425);
+            this.listBox1.TabIndex = 3;
             // 
             // DocInter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "DocInter";
             this.Text = "Помошник доктора - HospitalX";
             this.Load += new System.EventHandler(this.DocInter_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Work;
+        private System.Windows.Forms.ToolStripMenuItem Patient;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

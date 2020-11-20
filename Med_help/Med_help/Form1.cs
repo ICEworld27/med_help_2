@@ -45,7 +45,7 @@ namespace Med_help
             //b.Give_Reference(555454, a, DateTime.Now, "");
             a.naznach.Add("Пей таблетки!");
             a.naznach.Add("Плоти налоги!");
-            //a.Add_Record(DateTime.Now, c);
+            a.Add_Record(DateTime.Now, c);
             Login Login= new Login();
             Login.Show(this);
         }

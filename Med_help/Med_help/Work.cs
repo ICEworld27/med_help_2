@@ -49,11 +49,7 @@ namespace Med_help
                 label1.Text += "\nВремя приёма " + good[0];
                 label1.Visible = true;
                 button1.Text = "Следующий";
-                button2.Visible = true;
-                button3.Visible = true;
-                button4.Visible = true;
-                button5.Visible = true;
-                button6.Visible = true;
+
                 doc.q.Remove(good[0]);
             }
             else
@@ -97,6 +93,45 @@ namespace Med_help
         {
             AddNaznach addNaznach = new AddNaznach(patient);
             addNaznach.Show();
+        }
+
+        private void Work_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nanach_Click(object sender, EventArgs e)
+        {
+            AddNaznach addNaznach = new AddNaznach(patient);
+            addNaznach.ShowDialog();
+        }
+
+        private void Spravka_Click(object sender, EventArgs e)
+        {
+            AddSpravka addNaznach = new AddSpravka(doc,patient);
+            addNaznach.ShowDialog();
+        }
+
+        private void New_Click(object sender, EventArgs e)
+        {
+            AddIll addNaznach = new AddIll(patient);
+            addNaznach.ShowDialog();
+        }
+
+        private void Restore_Click(object sender, EventArgs e)
+        {
+            RestoreIll addNaznach = new RestoreIll(patient);
+            addNaznach.ShowDialog();
+        }
+
+        private void AddZapis_Click(object sender, EventArgs e)
+        {
+            new Zapis(patient, true).ShowDialog();
         }
     }
 }
