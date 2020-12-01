@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 namespace Med_help
 {
     class Hospital
     {
         public List<Doc> a = new List<Doc>();
-        public List<Patient> b = new List<Patient>();
         private static Hospital instance;
+        public List<Patient> b = new List<Patient>();
+        
 
-        private Hospital()
-        { }
 
         public static Hospital getInstance()
         {

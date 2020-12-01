@@ -25,6 +25,11 @@ namespace Med_help
         {
             Doc doc;
             Patient patient;
+            Doc v = new Doc("Vasily", "P", "VasilyP", "Vasa5761", "Lor");
+            Patient patient1 = new Patient("D", "D", "D", "D", DateTime.Now, 575575);
+            v.q.Add(DateTime.Now, patient1);
+            Hospital.getInstance().a.Add(v);
+            
             bool log = false;
             Hospital hospital = Hospital.getInstance();
             for (int i = 0; i < hospital.a.Count; i++)
@@ -50,6 +55,7 @@ namespace Med_help
             if (log) 
             {
                 vv.Text = "loged";
+                new ApplicationContext().Load();
             }
 
         }

@@ -52,5 +52,16 @@ namespace Med_help
             Work Login = new Work(doc);
             Login.ShowDialog();
         }
+
+        private void Patient_Click(object sender, EventArgs e)
+        {
+            NewPatient newPatient = new NewPatient();
+            newPatient.ShowDialog();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

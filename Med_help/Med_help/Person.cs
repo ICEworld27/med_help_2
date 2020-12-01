@@ -11,6 +11,7 @@ namespace Med_help
         public string otchestvo;
         public string login;
         public string password;
+        public int Id { get; set; }
         bool loged = false;
         public Person(string name, string srname, string login, string password, string otchestvo = "")
         {
@@ -19,6 +20,10 @@ namespace Med_help
             this.login = login;
             this.password = password;
             this.otchestvo = otchestvo;
+        }
+        public Person()
+        {
+
         }
         public bool Login(string login, string password)
         {

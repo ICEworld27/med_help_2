@@ -6,7 +6,6 @@ C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\Med_help.d
 C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\Med_help.pdb
 C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\MessagingToolkit.QRCode.dll
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.csprojAssemblyReference.cache
-C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.Form1.resources
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.csproj.GenerateResource.cache
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.AssemblyInfoInputs.cache
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.AssemblyInfo.cs
@@ -42,3 +41,7 @@ C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\System.Col
 C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\acern\source\repos\Med_help\Med_help\obj\Debug\netcoreapp3.1\Med_help.csproj.CoreCompileInputs.cache
+C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\acern\source\repos\Med_help\Med_help\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll

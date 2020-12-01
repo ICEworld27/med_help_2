@@ -14,6 +14,7 @@ namespace Med_help
         public List<string> naznach = new List<string>();
         public Med_card Med_Card;
         public List<Reference> references = new List<Reference>();
+        
         public Patient(string name, string srname, string login, string password, DateTime bd, int med_number,  string otchestvo = "") : base(name, srname, login, password, otchestvo)
         {
             this.bd = bd;
@@ -21,6 +22,11 @@ namespace Med_help
             Hospital hospital = Hospital.getInstance();
             
             hospital.b.Add(this);
+
+        }
+        public Patient()
+        {
+
         }
         public void Add_Record(DateTime time, Doc doc)
         {

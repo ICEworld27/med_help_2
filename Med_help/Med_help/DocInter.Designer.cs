@@ -60,6 +60,7 @@
             this.Patient.Name = "Patient";
             this.Patient.Size = new System.Drawing.Size(133, 24);
             this.Patient.Text = "Новый пациент";
+            this.Patient.Click += new System.EventHandler(this.Patient_Click);
             // 
             // listBox1
             // 
@@ -70,6 +71,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(782, 425);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // DocInter
             // 

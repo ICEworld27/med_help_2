@@ -15,6 +15,10 @@ namespace Med_help
             Hospital hospital = Hospital.getInstance();
             hospital.a.Add(this);
         }
+        public Doc()
+        {
+
+        }
         public void Give_Reference(int time, Patient owner, DateTime time_of_issue, string discription)
         {
             owner.references.Add(new Reference(time, owner, time_of_issue, discription));

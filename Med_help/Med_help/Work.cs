@@ -24,8 +24,13 @@ namespace Med_help
             foreach (KeyValuePair<DateTime, Patient> key in doc.q)
             {
                 good.Add(key.Key);
+                if (key.Value == patient&& key.Key.CompareTo(DateTime.Now) < 60*60)
+                {
+                    doc.q.Remove(key.Key);
+                }
             }
             label1.Text = "";
+
             if(good.Count > 0)
             {
                 for (int i = 0; i < good.Count - 1; i++)
@@ -49,7 +54,7 @@ namespace Med_help
                 label1.Text += "\nВремя приёма " + good[0];
                 label1.Visible = true;
                 button1.Text = "Следующий";
-
+                menuStrip1.Visible = true;
                 doc.q.Remove(good[0]);
             }
             else
@@ -57,6 +62,7 @@ namespace Med_help
                 label1.Text = "Пока никто не записался на ваш приём";
                 button1.Text = "Следующий";
                 label1.Visible = true;
+                menuStrip1.Visible = false;
             }
 
             
