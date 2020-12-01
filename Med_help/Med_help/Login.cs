@@ -34,12 +34,12 @@ namespace Med_help
             Hospital hospital = Hospital.getInstance();
             for (int i = 0; i < hospital.a.Count; i++)
             {
-                if (hospital.a[i].Login(vLogin.Text, vPassword.Text ))
+                if (hospital.a[i].Login(vLogin.Text, vPassword.Text) == true)
                 {
                     doc = hospital.a[i];
                     log = true;
-                    DocInter Login = new DocInter(doc);
-                    Login.Show();
+                    DocInter Loging = new DocInter(doc);
+                    Loging.Show();
                 }
             }
             for (int i = 0; i < hospital.b.Count; i++)

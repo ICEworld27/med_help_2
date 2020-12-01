@@ -6,17 +6,27 @@ using Microsoft.EntityFrameworkCore;
 namespace Med_help
 {
     public class ApplicationContext : DbContext
-    { 
-            public DbSet<Doc> docs { get; set; }
+    {
+        private static ApplicationContext instance;
+
+
+
+        public static ApplicationContext getInstance()
+        {
+            if (instance == null)
+                instance = new ApplicationContext();
+            return instance;
+        }
+        public DbSet<Doc> docs { get; set; }
             public DbSet<Patient> patients { get; set; }
-        public ApplicationContext()
+        public ApplicationContext() : base()
             {
                 Database.EnsureCreated();
             }
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
                 optionsBuilder.UseMySql(
-                    "server=localhost;user=root;password=12345678;database=usersdb5;",
+                    "server=localhost;user=root;password=root;database=shurup_project;",
                     new MySqlServerVersion(new Version(8, 0, 19))
                 );
             }
