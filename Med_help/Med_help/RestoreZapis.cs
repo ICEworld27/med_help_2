@@ -21,7 +21,7 @@ namespace Med_help
             {
                 foreach (KeyValuePair<DateTime, Patient> key in hospital.a[i].q)
                 {
-                    if (key.Value == patient)
+                    if (key.Value == patient && ab.ContainsKey(key.Key)==false)
                     {
                         restore_zapis.Items.Add(key.Key +" - "+ hospital.a[i].profession);
                         ab.Add(key.Key, hospital.a[i]);

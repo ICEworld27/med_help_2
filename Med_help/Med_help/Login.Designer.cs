@@ -147,6 +147,7 @@
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "Login";
             this.Text = "Авторизация - HospitalX";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

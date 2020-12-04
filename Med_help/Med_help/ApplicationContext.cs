@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,8 +41,8 @@ namespace Med_help
         }
         public void Load()
         {
-            Hospital.getInstance().a  = docs.ToListAsync().Result;
-            Hospital.getInstance().b = patients.ToListAsync().Result;
+            Hospital.getInstance().a  = docs.ToList();
+            Hospital.getInstance().b = patients.ToList();
         }
     }
     }

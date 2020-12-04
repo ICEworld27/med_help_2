@@ -25,6 +25,7 @@ namespace Med_help
         {
             Doc doc;
             Patient patient;
+            new ApplicationContext().Load();
             Doc v = new Doc("Vasily", "P", "VasilyP", "Vasa5761", "Lor");
             Patient patient1 = new Patient("D", "D", "D", "D", DateTime.Now, 575575);
             v.q.Add(DateTime.Now, patient1);
@@ -32,12 +33,15 @@ namespace Med_help
             
             bool log = false;
             Hospital hospital = Hospital.getInstance();
+            
             for (int i = 0; i < hospital.a.Count; i++)
             {
                 if (hospital.a[i].Login(vLogin.Text, vPassword.Text) == true)
                 {
                     doc = hospital.a[i];
                     log = true;
+
+
                     DocInter Loging = new DocInter(doc);
                     Loging.Show();
                 }
@@ -48,6 +52,8 @@ namespace Med_help
                 {
                     patient = hospital.b[i];
                     log = true;
+                    
+
                     PatientInter Login = new PatientInter(patient);
                     Login.Show();
                 }
@@ -55,7 +61,7 @@ namespace Med_help
             if (log) 
             {
                 vv.Text = "loged";
-                new ApplicationContext().Load();
+               
             }
 
         }
@@ -63,6 +69,11 @@ namespace Med_help
         private void vv_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ApplicationContext.getInstance().Save();
         }
     }
 }
